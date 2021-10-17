@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>星座查询</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: auto;
+            line-height: 40px;
+            position: relative;
+            top: 200px;
+        }
+    </style>
+</head>
+<body>
+<form action="/horoscope" method="post" class="horoscope">
+    <div class="hint">运势类型：今日运势-- today 明日运势--tomorrow 本周运势-- week 本月运势-- month 本年运势-- year</div>
+    星座：<input type="text" name="consName">
+    <br>
+
+    <!-- 利用下拉框-->
+    <select name="type" id="horo_type">
+        <option value="today">今日运势</option>
+        <option value="tomorrow">明日运势</option>
+        <option value="week">本周运势</option>
+        <option value="month">本月运势</option>
+        <option value="year">本年运势</option>
+    </select>
+    <br>
+    <input type="submit" value="查询">
+    <!--
+    类型：
+    <input type="checkbox" name="horo_type"/>今日运势
+    <input type="checkbox" name="horo_type"/>明日运势
+    <input type="checkbox" name="horo_type"/>本周运势
+    <input type="checkbox" name="horo_type"/>本月运势
+    <input type="checkbox" name="horo_type"/>本年运势
+    -->
+
+
+
+</form>
+</body>
+</html>

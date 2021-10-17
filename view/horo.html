@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>星座详情</title>
+    <style>
+        body {
+            text-align: center;
+            margin: auto;
+
+        }
+
+        ul li{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+<h3>
+    你的星座运势：
+</h3>
+{{.}}
+
+<ul>
+    {{range .Reason}}
+    <li>{{.Name }}</li>
+    <li>{{.Datetime}}</li>
+    <li>{{.Date}}</li>
+    <li>{{.All}}</li>
+    <li>{{.Color}}</li>
+    <li>{{.Health}}</li>
+    <li>{{.Love}}</li>
+    <li>{{.Money}}</li>
+    <li>{{.Number}}</li>
+    <li>{{.QFriend}}</li>
+    <li>{{.Summary}}</li>
+    <li>{{.Work}}</li>
+    <li>{{.Error_code}}</li>
+    {{end}}
+</ul>
+</body>
+</html>
